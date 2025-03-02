@@ -1,0 +1,16 @@
+# Node files
+node_modules/
+package-lock.json
+
+# Playwright reports
+playwright-report/
+
+# IDE files
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
