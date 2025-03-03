@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18  # You can use 20 if preferred
+    commands:
+      - echo "Installing dependencies..."
+      - npm ci
+      - npx playwright install --with-deps  # Ensures Playwright installs browsers
+
+  build:
+    commands:
+      - echo "Running Playwright tests..."
+      - npx playwright test
+
+artifacts:
+  files:
+    - 'playwright-report/**'
+  discard-paths: no
