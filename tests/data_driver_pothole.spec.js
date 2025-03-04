@@ -27,7 +27,7 @@ for (const data of testCases) {
         await expect(page).toHaveTitle(/Report a pothole/);
         await page.waitForTimeout(2000);
 
-        // Step 5: Enter postcode
+        // Step 5: Enter postcode into the textbox
         console.log(`📌 Entering postcode: ${data.postcode}`);
         await page.fill('#postcode', data.postcode);
 
