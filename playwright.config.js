@@ -2,7 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   use: {
-    headless: false,  // Ensure browser UI is visible
+    headless: true,  // Ensure browser UI is visible
     slowMo: 1000,  // Slow down actions for debugging
     launchOptions: {
 		      args: [
